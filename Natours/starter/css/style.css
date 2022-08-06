@@ -43,17 +43,17 @@ body {
     font-size: 1.6rem;
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -174,12 +174,12 @@ body {
     opacity: 0;
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
 
-.btn-white::after {
+.btn--white::after {
     background-color: #fff;
 }
 
