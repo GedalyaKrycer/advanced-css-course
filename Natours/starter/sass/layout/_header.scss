@@ -10,7 +10,7 @@
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
 
     &__logo-box {
         position: absolute;
