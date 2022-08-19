@@ -1,11 +1,13 @@
+$sectionHorizontalPadding: 3rem;
+
 .section-about {
     background-color: $color-grey-light-1;
-    padding: 25rem 0;
+    padding: 25rem $sectionHorizontalPadding;
     margin-top: -20vh;
 }
 
 .section-features {
-    padding: 20rem 0;
+    padding: 20rem $sectionHorizontalPadding;
     background-image: 
         linear-gradient(
             to right bottom, 
@@ -19,4 +21,11 @@
     & > * {
         transform: skewY(7deg);
     }
+}
+
+
+.section-tours {
+    background-color: $color-grey-light-1;
+    padding: 25rem $sectionHorizontalPadding 15rem;
+    margin-top: -10rem;
 }
