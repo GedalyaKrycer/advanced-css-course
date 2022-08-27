@@ -11,7 +11,7 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
-        border-radius: 3px;
+        border-radius: $br-sm;
         box-shadow: $box-shadow--card;
         overflow: hidden;
         transition: all .8s ease;

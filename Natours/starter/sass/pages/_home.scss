@@ -29,3 +29,16 @@ $sectionHorizontalPadding: 3rem;
     padding: 25rem $sectionHorizontalPadding 15rem;
     margin-top: -10rem;
 }
+
+
+.section-stories {
+    position: relative;
+    padding: 15rem 0;
+}
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+}
