@@ -4,6 +4,10 @@ $sectionHorizontalPadding: 3rem;
     background-color: $color-grey-light-1;
     padding: 25rem $sectionHorizontalPadding;
     margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
 }
 
 .section-features {
@@ -21,6 +25,10 @@ $sectionHorizontalPadding: 3rem;
     & > * {
         transform: skewY(7deg);
     }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 
@@ -28,17 +36,29 @@ $sectionHorizontalPadding: 3rem;
     background-color: $color-grey-light-1;
     padding: 25rem $sectionHorizontalPadding 15rem;
     margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
 }
 
 
 .section-stories {
     position: relative;
     padding: 15rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .book {
@@ -54,12 +74,37 @@ $sectionHorizontalPadding: 3rem;
     border-radius: $br-sm;
     box-shadow: $box-shadow--card;
 
+    @include respond(tab-land) {
+        background-image: 
+        linear-gradient(
+                105deg,
+                rgba($color-white, .9) 0%, 
+                rgba($color-white, .9) 65%, 
+                transparent 65%
+            ), 
+            url(../img/nat-10.jpg);
+    }
 
-    height: 50rem;
-
+    @include respond(tab-port) {
+        background-image: 
+        linear-gradient(
+                to right,
+                rgba($color-white, .9) 0%, 
+                rgba($color-white, .9) 100%
+            ), 
+            url(../img/nat-10.jpg);
+    }
+    
     &__form {
         width: 50%;
         padding: 6rem;
+        
+        @include respond(tab-land) {
+            width: 65%;
+        }
 
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 }

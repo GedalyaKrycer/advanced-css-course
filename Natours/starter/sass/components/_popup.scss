@@ -21,6 +21,8 @@
     }
 
     &__close {
+        position: relative;
+        z-index: 100;
         &:link,
         &:visited {
             color: $color-grey-dark-1;
@@ -52,12 +54,20 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.25);
         transition: all .5s .2s;
+
     }
 
     &__left {
         width: 33.333333%;
         display: table-cell;
         vertical-align: middle;
+
+        @include respond(tab-port) {
+            width: 100%;
+            display: block;
+            height: 2rem;
+            opacity: .1;
+        }
     }
     
     &__right {
@@ -65,6 +75,11 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+            display: block;
+        }
     }
 
     &__image {
